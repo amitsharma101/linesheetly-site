@@ -116,7 +116,7 @@
   <section id="free">
     <h2>Get a free linesheet of your store.</h2>
     <p style="color:var(--muted);max-width:640px">Tell us your Shopify store and we'll email you a real wholesale linesheet built from your current products, free. Founding-member pricing is reserved for everyone on this list.</p>
-    <form id="waitlist" method="POST" action="FORM_ENDPOINT_PLACEHOLDER">
+    <form id="waitlist" method="POST" action="https://formspree.io/f/mljggjzj">
       <input name="email" type="email" required placeholder="you@yourbrand.com" autocomplete="email">
       <input name="store_url" type="text" required placeholder="yourbrand.com or yourbrand.myshopify.com">
       <select name="current_tool">
@@ -129,6 +129,7 @@
         <option value="">How many products?</option>
         <option>Under 50</option><option>50–250</option><option>250–1,000</option><option>1,000+</option>
       </select>
+      <input type="hidden" name="_subject" value="New Linesheetly signup">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <button type="submit">Send me my linesheet</button>
       <div class="ok" id="ok">Thanks! Your linesheet is on its way within one business day.</div>
